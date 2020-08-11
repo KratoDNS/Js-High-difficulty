@@ -7,4 +7,5 @@ let calc=1
      console.log(calc *=str[i])}; 
 console.log(calc**3)
 let final=String(calc**3)
-console.log(final.split('',2))
+console.log(final)
+console.log(final[0],final[1])
