@@ -1,13 +1,46 @@
-let lang = prompt('Введите ru или en')
-let ru=  1
-let en = 1
+//....................Первое задание..................
+
+let lang = prompt('Введите ru или en');
+let ruweek='понедельник, вторник, среда, четверг, пятница, суббота, воскресенье';
+let enweek='monday, tuesday, Wednesday, Thursday, friday, Saturday, sunday';
 
 
-
-let ruweek='понедельник, вторник, среда, четверг, пятница, суббота, воскресенье'
-let enweek='monday, tuesday, Wednesday, Thursday, friday, Saturday, sunday'
-    if (lang = ru){
-    alert(ruweek.split(' ', 7))
+if (lang == 'ru') {
+    console.log(ruweek.split(' ', 7));
+}   else if (lang == 'en') {
+    console.log(enweek.split(' ', 7));
 }   else {
-    alert(enweek.split(' ', 7))
+    console.log ('вы шо, надо переделать')
 }
+
+
+
+switch (lang) {
+    case 'ru':
+        alert(ruweek.split(' ', 7));
+        break;
+    case 'en':
+        alert(enweek.split(' ', 7));
+        break;
+    default :
+        alert('не то значение');
+        break;
+}
+
+let str={
+    'ru' : [ruweek.split(' ', 7)],
+    'en' : [enweek.split(' ', 7)],
+}; console.log (str[lang])
+
+
+//....................Второе задание..................
+
+let  namePerson= prompt ('Введите имя')
+
+ result = ( namePerson == 'Артем') ? 'директор':
+     (namePerson == 'Максим') ? 'преподаватель' :
+      'студент';
+
+ console.log (result)
+
+
